@@ -4,9 +4,86 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <link rel="icon" href="./assets/image/icon_app.png" type="image/gif">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+      <title>MusicBox</title>
 </head>
-<body>
-      
-</body>
+
+<div class="app">
+      <!-- dashboard -->
+      <div class="dashboard">
+            <!-- header -->
+            <div class="header">
+                  <div class="logo">
+                        <i class="fa-brands fa-dropbox"></i>
+                        MusicBox
+                  </div>
+                  <div class="heart">
+                        <i class="fa-solid fa-heart"></i>
+                  </div>
+            </div>
+
+            <!-- cd -->
+            <div class="cd">
+                  <div class="cd-thumb" style="background-image: url('./assets/image/icon_app.png')"></div>
+            </div>
+
+            <!-- information song -->
+            <div class="info">
+                  <h3 class="song_name">Homura</h3>
+                  <p class="singer">Lisa Lisa</p>
+            </div>
+
+            <!-- control -->
+            <div class="control">
+                  <div class="pre">
+                        <i class="fa-solid fa-backward-step"></i>
+                  </div>
+                  <div class="toggle">
+                        <!-- <i class="fa-solid fa-pause"></i> -->
+                        <i class="fa-solid fa-caret-right"></i>
+                  </div>
+                  <div class="next">
+                        <i class="fa-solid fa-forward-step"></i>
+                  </div>
+            </div>
+
+            <!-- progress -->
+            <div class="progress">
+                  <input type="range" id="percent" value="0" min="0" max="100" step="0.1">
+            </div>
+
+            <!-- options -->
+            <div class="options">
+                  <div class="loop"><i class="fa-solid fa-arrows-rotate"></i></div>
+                  <div class="random"><i class="fa-solid fa-shuffle"></i></div>
+                  <div class="download"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+            </div>
+
+            <!-- player -->
+            <audio src="" id="audio"></audio>
+      </div>
+
+      <div class="song_playList">
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+            <div class="home">
+                  <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="album">
+                  <i class="fa-solid fa-compact-disc"></i>
+            </div>
+            <div class="setting">
+                  <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="more">
+                  <i class="fa-solid fa-align-justify"></i>
+            </div>
+      </div>
+</div>
+
+<script src="app.js"></script>
 </html>

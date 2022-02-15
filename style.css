@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap');
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+      display: none;
+}
+
+.app {
+      height: 812px;
+      color: white;
+}
+
+.app .dashboard {
+      position: fixed;
+      width: 100%;
+      padding: 0 10px;
+      top: 0;
+      left: 0;
+      text-align: center;
+      background-color: #140d36;
+      padding-bottom: 20px;
+}
+
+/* header */
+.app .dashboard .header {
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      font-weight: 600;
+}
+
+.app .dashboard .header .logo {
+      letter-spacing: 2px;
+}
+
+
+/* cd */
+.app .dashboard .cd {
+      width: 160px;     
+      height: 160px;
+      margin: 0 auto;
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 30px;
+      /* border: 1px solid salmon; */
+}
+
+
+.app .dashboard .cd .cd-thumb {
+      height: 80%;
+      width: 80%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 auto;
+      border: 10px solid #5961a0;
+      border-radius: 50%;
+      /* border: 1px solid salmon; */
+}
+
+
+/* information song */
+
+.app .dashboard .info {
+      margin-top: 10px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
+.singer {
+      font-size: 15px;
+}
+
+.song_name {
+      font-size: 15px;
+      color: #ec7803;
+}
+
+
+/* control */
+.app .dashboard .control {
+      display: flex;
+      width: 250px;
+      height: 50px;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: 15px;
+}
+
+.app .dashboard .control .pre,
+.app .dashboard .control .next
+{
+      width: 30px;
+      height: 30px;
+      background-color: #30246d;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+      border: 1px solid #30246d;
+      box-shadow: 1px 2px #131314;
+      font-size: 18px;
+      cursor: pointer;
+}
+
+.app .dashboard .control .pre:hover {
+      background-color: #24185f;
+} 
+
+.app .dashboard .control .next:hover {
+      background-color: #24185f;
+}
+
+.app .dashboard .control .toggle {
+      height: 100%;
+      width: 50px;
+      line-height: 50px;
+      background-color: #ec7803;
+      border-radius: 50%;
+      font-size: 30px;
+      box-shadow: 1px 2px #131314;
+      border: 1px solid #30246d;
+      cursor: pointer;
+}
+
+/* progress */
+.app .dashboard .progress {
+      margin-top: 20px;
+}
+
+.app .dashboard .progress #percent {
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      cursor: pointer;
+      -webkit-appearance: none;
+      height: 6px;
+      background: #d3d3d3;
+      outline: none;
+}
+
+.app .dashboard .progress #percent::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #ec7803;
+      cursor: pointer;
+}
+
+/* options */
+.app .dashboard .options {
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      margin: 0 auto;
+      margin-top: 20px;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.5);
+}
+
+.app .dashboard .options div {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      cursor: pointer;
+}
+
+.app .dashboard .options div:hover {
+      color: #ec7803;
+}
+ 
+/*song list*/
+.app .song_playList {
+      background-color: #1d1449;
+      padding: 20px;
+      margin-top: 410px;
+      padding: 50px 10px;
+      -webkit-scrollbar: none;
+}
+
+.app .song_playList .field_song {
+      height: 60px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      cursor: pointer;
+}
+
+.app .song_playList .field_song .song_name {
+      color: #24185f;
+}
+
+.active {
+      background-color: #ec7803 !important;
+}
+
+.app .song_playList .field_song .details {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
+.app .song_playList .field_song .time {
+      width: calc(100% - 70% -35px);
+}
+
+/* footer */
+.footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      color:black;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      font-size: 18px;
+      background-color: #140d36;
+      color: rgba(255, 255, 255, 0.5);
+}
+
+.footer div {
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      cursor: pointer;
+}
+
+.footer div:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+}
